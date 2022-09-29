@@ -1,0 +1,2507 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en">
+ <head>
+  <meta content="text/html; CHARSET=windows-1251" http-equiv="Content-Type"/>
+  <meta content="Virginia Regulatory Town Hall View Comments" name="description"/>
+  <link href="../styles.css" rel="stylesheet" type="text/css"/>
+  <link href="../print.css" media="print" rel="stylesheet" type="text/css"/>
+  <link href="../townhall.ico" rel="shortcut icon"/>
+  <link href='../"w3c/p3p.xml"' rel="P3Pv1"/>
+  <style type="text/css">
+   .Cbox {
+    background-color: #FFFAEA;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 700px;
+    }
+    .divComment {
+    width: 700px;
+    word-wrap: break-word; 
+    }
+    #contentwide a.linklight {
+    Color: #777777;
+    Text-Decoration: none;
+    }
+    #contentwide a.linklight:visited {
+    Color: #777777;
+    }
+    #contentwide a.linklight:hover {
+    Color: dodgerblue;
+    }
+    #contentwide a.linkbrown {
+    Color: #432432;
+    }
+    #contentwide a.linkbrown:visited {
+    Color: #432432;
+    }
+    #contentwide a.linkbrown:hover {
+    Color: dodgerblue;
+    }
+    
+    pre {
+      white-space: pre-wrap;
+    }
+  </style>
+  <title>
+   Virginia Regulatory Town Hall View Comments
+  </title>
+  <script type="text/javascript">
+   _ajaxConfig = {'_cfscriptLocation':'viewcomments.cfc', '_jsscriptFolder':'/ajaxCFC/js'};
+  </script>
+  <script src="/ajaxCFC/js/ajax.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   function flagcomment(jcommentid)
+      {
+      DWREngine._execute(_ajaxConfig._cfscriptLocation, null, 'FlagC', jcommentid, showflag);
+      }
+    function showflag(blockofhtml)
+      {
+      var flagstatus = blockofhtml.substr(0,1);
+	  var jcommentid = blockofhtml.substr(1,blockofhtml.length - 1);
+	  if (flagstatus == 'Y')
+	    {
+	    document.getElementById('cbox'+jcommentid).style.backgroundColor = 'pink';
+	    document.getElementById('cflag'+jcommentid).innerHTML = 'Unflag';
+	    }
+	  else
+	    {
+	    document.getElementById('cbox'+jcommentid).style.backgroundColor = '#FFFAEA';
+        document.getElementById('cflag'+jcommentid).innerHTML = 'Flag as Inappropriate';
+        }
+      }
+
+    
+    function mySubmit(whataction, urlString)
+      {
+      var str = 'ViewComments.cfm?'+urlString;
+
+      switch (whataction)
+        {
+        case "xportPDF":
+          //alert(str);
+          document.forms['menuselection'].xport.value='PDF';
+          document.forms['menuselection'].action=str;
+          document.forms['menuselection'].submit();
+          document.forms['menuselection'].xport.value='No';
+          break;
+
+        case "xportXLS":
+          //alert(str);
+          document.forms['menuselection'].xport.value='XLS';
+          document.forms['menuselection'].action=str;
+          document.forms['menuselection'].submit();
+          document.forms['menuselection'].xport.value='No';
+          break;
+
+        default:
+          alert("Invalid Action");
+        }
+      }
+  </script>
+  <script language="javascript" src="js/jquery-1.12.0.min.js">
+  </script>
+  <script>
+   $( window ).load(function() {
+      
+      if ($(".divComment").children("table").length > 0)
+        $(".divComment").children("table").width("700px");
+      else
+        $(".divComment").width("700px");
+    });
+  </script>
+ </head>
+ <body>
+  <div id="vaheader">
+   <div class="FloatRight" style="display: none;">
+    <a href="http://www.virginia.gov/search">
+     Search Virginia.Gov
+    </a>
+   </div>
+   <a href="http://www.virginia.gov">
+    <img alt="virginia.gov" class="virginiaLogo" height="18" src="../graphics/virginiasmlogo.jpg" width="103"/>
+   </a>
+   <a href="https://www.virginia.gov/agencies/" title="List of Commonwealth Agencies">
+    Agencies
+   </a>
+   |
+   <a href="http://www.governor.virginia.gov" title="Web site of the Governor">
+    Governor
+   </a>
+  </div>
+  <div id="agencybanner" title="Virginia Regulatory Town Hall">
+   <div>
+    <img alt="Virginia Regulatory Town Hall" src="../graphics/townhalllogo.gif"/>
+   </div>
+  </div>
+  <div id="breadcrumb">
+   <div id="sitesearch">
+    <form action="../L/search.cfm" method="post">
+     <input name="keyword" onclick="javaScript: if (this.value=='Search the TownHall')this.value=''" onkeypress="javaScript: if (this.value=='Search the TownHall')this.value=''" style="vertical-align: middle; height: 18px; font-size: .85em; width: 140px; background-color: #feffff; padding: 0px; border: 0px; border-top: 1px solid #D5D5D5; border-bottom: 1px solid #D5D5D5;" type="text" value="Search the TownHall"/>
+     <input src="../Graphics/MagnifyGlassSearch.gif" style="vertical-align: middle; height: 20px;" type="image"/>
+     <a alt="search page" href="../L/search.cfm" style="font-size: .9em;">
+      Search Options
+     </a>
+    </form>
+   </div>
+   <div id="breadcrumblinks">
+    <a href="../index.cfm">
+     Home
+    </a>
+    &gt;
+   </div>
+  </div>
+  <div id="sidebar">
+   <div id="menu8">
+    <a>
+    </a>
+   </div>
+   <ul class="menu">
+    <li>
+     <a href="../L/ListBoards.cfm" title="Browse Regulations">
+      Find a Regulation
+     </a>
+    </li>
+    <li>
+     <a href="../L/NowInProgress.cfm" title="Regulatory Activity">
+      Regulatory Activity
+     </a>
+     <ul>
+      <li>
+       <a href="../L/NowInProgress.cfm" title="Actions Underway">
+        Actions Underway
+       </a>
+      </li>
+      <li>
+       <a href="../L/petitions.cfm" title="Petitions for Rulemaking">
+        Petitions
+       </a>
+      </li>
+      <li>
+       <a href="../L/mandates.cfm" title="Legislative Mandates">
+        Legislative Mandates
+       </a>
+      </li>
+      <li>
+       <a href="../L/previews.cfm" title="Periodic Reviews">
+        Periodic Reviews
+       </a>
+      </li>
+      <li>
+       <a href="../L/generalnotice.cfm" title="General Notices">
+        General Notices
+       </a>
+      </li>
+     </ul>
+    </li>
+    <li>
+     <a href="../L/meetings.cfm?time=future" title="Meetings">
+      Meetings
+     </a>
+    </li>
+    <li>
+     <a href="../L/GDocs.cfm" title="Guidance Documents">
+      Guidance Documents
+     </a>
+    </li>
+    <li>
+     <a href="../L/Forums.cfm" title="Comment Forums">
+      Comment Forums
+     </a>
+    </li>
+   </ul>
+   <div class="navTR">
+    Sign in
+   </div>
+   <div id="menu6">
+    <a href="../L/statelogin.cfm" title="State agency login">
+     State Agency
+    </a>
+   </div>
+   <div id="menu7">
+    <a href="../L/publiclogin.cfm" title="Public user Login">
+     Registered Public
+    </a>
+   </div>
+   <div id="menu13">
+    <a href="../L/Register.cfm" title="Register as a public user">
+     Sign up
+    </a>
+   </div>
+   <div id="menu12">
+    <a>
+    </a>
+   </div>
+  </div>
+  <div id="contentwide">
+   <div class="headerA">
+    <div style="float: left; margin-right: 8px">
+     <a href="ViewAgency.cfm?AgencyNumber=201">
+      <img alt="Agency" border="0" src="../graphics/a_agency.gif" style="vertical-align: middle"/>
+     </a>
+    </div>
+    <div style="float: left; Width: 630px;">
+     Department of Education
+    </div>
+    <div style="clear: left; font-size: 9px;">
+    </div>
+    <div style="float: left; margin-right: 8px">
+     <a href="ViewBoard.cfm?BoardID=93">
+      <img alt="Board" border="0" src="../graphics/a_board.gif" style="vertical-align: middle"/>
+     </a>
+    </div>
+    <div style="float: left; Width: 630px;">
+     State Board of Education
+    </div>
+    <div style="clear: left; font-size: 9px;">
+    </div>
+   </div>
+   <div style="color:#111111;">
+    <div style="clear: left; height: 9px;">
+    </div>
+    <strong>
+     Guidance Document Change:
+    </strong>
+    Every day, throughout the Commonwealth of Virginia, educators and school leaders work to ensure that all students have an opportunity to receive a high-quality education. As a part of that work, educators strive to meet the individual needs of all students entrusted to their care, and
+teachers work to create educational environments where all students thrive. The Virginia Department of Education (the “Department”) recognizes that each child is a unique individual with distinctive abilities and characteristics that should be valued and respected. All students have the right to attend school in an environment free from discrimination, harassment, or bullying.
+
+The Department supports efforts to protect and encourage respect for all students. Thus, we have a collective responsibility to address topics such as the treatment of transgender students with necessary compassion and respect for all students. 
+
+The Department also fully acknowledges the rights of parents to exercise their fundamental rights granted by the Fourteenth Amendment of the U.S. Constitution to direct the care, upbringing, and education of their children. The Code of Virginia reaffirms the rights of parents to determine how their children will be raised and educated. Empowering parents is not only a fundamental right, but it is essential to improving outcomes for all children in Virginia.
+
+The Department is mindful of constitutional protections that prohibit governmental entities from requiring individuals to adhere to or adopt a particular ideological belief. The First Amendment of the U.S. Constitution guarantees religious freedom and prohibits the government from compelling speech that is contrary to an individual’s personal or religious beliefs.
+
+The Department embarked on a thorough review of the Model Policies Guidance adopted on March 4, 2021 (the “2021 Model Policies”). The 2021 Model Policies promoted a specific viewpoint aimed at achieving cultural and social transformation in schools. The 2021 Model Policies also disregarded the rights of parents and ignored other legal and constitutional principles that significantly impact how schools educate students, including transgender students. With the publication of these 2022 Model Policies (the “2022 Model Policies”), the Department hereby
+withdraws the 2021 Model Policies, which shall have no further force and effect.
+
+The Department issues the 2022 Model Policies to provide clear, accurate, and useful guidance to Virginia school boards that align with statutory provisions governing the Model Policies. See Code of Virginia, § 22.1-23.3 (the “Act”). Significantly, the 2022 Model Policies also consider over 9,000 comments submitted to the Department during the public comment period for the 2021 Model Policies.
+   </div>
+   <div style="clear: left; height: 9px;">
+   </div>
+   <p>
+    51489 comments
+   </p>
+   <div style="margin-bottom: 12px;">
+    <strong>
+     All comments for this forum
+    </strong>
+   </div>
+   <div style="font-family: verdana, arial, helvetica; font-size: 8pt; width: 700px">
+    <form action="ViewComments.cfm?GdocForumID=1953&amp;Note=Running+an+analysis+on+the+town+hall+data.+If+you+have+any+questions%2C+contact+sarah.beth.crowder%40gmail.com" id="page" method="post" name="page">
+     <div style="float: right">
+      Page
+      <input id="vpage" name="vPage" style="width: 20px" type="input" value="1"/>
+      of
+      <a class="linkbrown" href="javascript:document.page.vpage.value=1030;document.page.submit();">
+       1030
+      </a>
+      <input id="vPerPage" name="vPerPage" style="width: 20px" type="input" value="50"/>
+      comments per page
+      <input id="sub1" name="sub1" style="font-size: 7pt;" type="submit" value="go"/>
+     </div>
+     <div>
+      <a href="javascript:document.page.vpage.value=2;document.page.submit();">
+       Next
+      </a>
+      <a class="linkbrown" href="Comments.cfm?GDocForumID=1953">
+       Back to List of Comments
+      </a>
+     </div>
+     <div style="font-size: 6px;">
+     </div>
+    </form>
+   </div>
+   <div class="Cbox" id="cbox128948">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  12:30 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Cassidy Moulton-Hill
+     <br/>
+     <br/>
+     <strong>
+      Protect Kids
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        This attempt to keep trans children from affirming their gender in the most vulnerable place they can be is a clear disregard for children’s lives and an attempt at nothing but conveying control over children with an extremely partisan belief.
+        <br>
+         Trans children are more likely to commit suicide over cis children. To declare any type of protection for children and then disregarding their right to be and simply just use a bathroom (a place that should be of extremely little concern of adults) makes the original argument disingenuous at best.
+         <br>
+          Protect children by allowing them the respect to make decisions regarding their own mental health and their decision to choose where to mind their own business without adults obsessing over their genitalia.
+         </br>
+        </br>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128948">
+      128948
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128949">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  2:37 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     LH, Fairfax County Public Schools mother
+     <br/>
+     <br/>
+     <strong>
+      Wholly support the 2022 guidance
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I fully support the proposed 2022 Guidelines.  The 2021 Guidance put schools in the position of severing the parent-child relationship, of deciding what is best for a child and of unduly influencing a minor child.  While supportive schools are essential, and the rights of every student are equally important, parents know, love and care for their children far more than schools, which are transient in a child's life.  The previous 2021 guidance went far beyond State and Federal Law in wresting decision-making and authority away from parents and handing it over to schools and non-guardians.
+       </p>
+       <p>
+        This new guidance appropriately revokes the deceit authorized by the 2021 guidance, which in practice directed schools to conceal its interactions with a minor child, whether over counseling or use of pronouns, facilities etc. This deceitful aspect of the 2021 guidance was one of its most problematic and dangerous features.
+       </p>
+       <p>
+        The previous guidance also cited and relied on resources only from ideological groups and smaller committees of medical professionals.  There is growing evidence, internationally and nationally, of harm from rushing children to gender transition, and the previous guidance fostered this by its complete omission of full research.  Most countries in Europe are moving away from the gender-affirming only approach, because of the accumulating evidence of harm to children.  Schools should never take on the role of influencing a child's sexuality or gender identity, and the previous guidance put schools in this position by an entirely one-sided approach to gender, rather than a balanced one as would be true of an evidence-based approach.
+       </p>
+       <p>
+        Additionally, the previous guidance put girls and women in harm's way by allowing males into all their safe spaces.  While the intent of the 2021 guidance is to allow transgender students to chose facilities, the practice in the way it is worded disallows questioning of any male entering a female space.  Further, the population of girls and women who have been victims of sexual assault is far greater than the population of transgender students, and it is wrong and dangerous for these women to have to fear males entering private spaces with them. There are reasonable and fair ways to protect transgender students without taking away the right to privacy and safety of every female in the system.
+       </p>
+       <p>
+        Further, the former guidance unlawfully compelled speech as to pronoun usage, again going far beyond both State and federal law.  Every child deserves equal respect, but the law does not grant them the right to compel the speech of others.
+       </p>
+       <p>
+        Every school will have to work out ways to respect and support transgender children, including for children who may face danger at home. It goes without question that support, compassion and respect are essential to caring for transgender children in schools. The answer, however, is not a blanket order affecting all families by unlawfully removing parental authority and involvement from a child's life, as was the effect of the previous guidance.  Schools and counselors should be partners with children and parents, not usurpers of parental roles.
+       </p>
+       <p>
+        This policy is a great step forward in removing the excesses of the 2021 Guidance.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128949">
+      128949
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128950">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  5:24 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Transgender pronkun
+      <img alt="black box" src="../graphics/blackbox.gif" style="border: 0px; vertical-align: middle"/>
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        There once was a child from glouchester , who sued , and took his ( her ) case to the supreme court . Glenn Youngkin was not elected to change that . He was elected because Terry McAuliffe stated the obvious . School Boards decide issues with schools . Parents who listen to out of their f***ing mind republicans do not run the schools . I hope all you stupid ass people who voted for this rich
+        <img alt="black box" src="../graphics/blackbox.gif" style="border: 0px; vertical-align: middle"/>
+        are happy now . YOUNGKIN AND TRUMP BOTH SUCK , AND WE NEED TO GET RID OF THEM BOTH
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128950">
+      128950
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128951">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  6:27 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Kate - Mom from Loudoun County
+     <br/>
+     <br/>
+     <strong>
+      Guidance 2022
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I support the new VDOE guidelines for schools. It’s time to get back to reading, writing, and arithmetic and stop the woke nonsense. Pushing pronouns on kids. Allowing children of the opposite sex in bathrooms and locker rooms is beyond ridiculous. Thanks you Governor Youngkin for bringing sanity back to our schools.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128951">
+      128951
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128952">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  6:30 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     John
+     <br/>
+     <br/>
+     <strong>
+      Support the policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I support the new policy. We need to focus on education and improving the quality of education. Let teachers teach and parents raise their own children.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128952">
+      128952
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128953">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  6:33 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Leonard Richmond Dad
+     <br/>
+     <br/>
+     <strong>
+      I support the new policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I support the new policy. The focus should be on test scores and good education not this nonsense.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128953">
+      128953
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128954">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  6:48 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Adam
+     <br/>
+     <br/>
+     <strong>
+      Parents should parent!!
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Parents need to educate their children before school.  Boys pee standing up, girls sit.  Keep this crap out of the schools.  Believe in GOD and you will see the light of this nonsense.  We have to save our country from this leftist rhetoric.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128954">
+      128954
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128955">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  6:48 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Deb F
+     <br/>
+     <br/>
+     <strong>
+      Protect Kids
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Names matter and every kid deserves to be called by their chosen name without question.
+       </p>
+       <p>
+        I moved to VA in the middle of kindergarten. My new teacher was an old bat named Mrs. Vannoy who insisted that all children be called by their proper names. My proper name was Deborah and despite my parents telling her that I went by Debbie, she refused to call me by that name. To this day, I still cringe a little when I hear people use it because I grew to hate my own name by a teacher who wouldn't listen. Furthermore, I knew how to spell Debbie but not Deborah so imagine being a kid in school who doesn't know how to spell your own name.
+       </p>
+       <p>
+        As a teacher, I have kids that go by many names that aren't their own given name. Being a Southerner, most of my family goes by either a nickname or some other name like a middle name. I have friends who I don't know their real names because I've always known them by a nickname. NO ONE QUESTIONS THIS and they shouldn't. But if one day, if Amy wants to be known as Aiden or Michael wants to go by Chelle, it's suddenly harmful to the child - to use a name they chose.
+       </p>
+       <p>
+        We need to stop this nonsense and use the money creating these bigoted bills (and the ensuing lawsuits) to do something really useful like give school staff raises, purchase school supplies, and fix crumbling school infrastructure.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128955">
+      128955
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128956">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  6:53 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Hunt McMahon
+     <br/>
+     <br/>
+     <strong>
+      Strongly support
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        The 2021 model policy blinded parents to what was going on at school with their own children. There is never a reason to exclude parents from the educational/social experiences of their children. Never.  The state is not the parent. Period.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128956">
+      128956
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128957">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  6:54 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Parent nova
+     <br/>
+     <br/>
+     <strong>
+      100% support parental rights
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        100% yes.
+        <br>
+         It is unlawful for Schools to take away parental rights. The high suicide rates with the transgender community are not because of the parents But rather because of the system failing a child, allowing the child to cut off their genitalia, and pursue a sex change at a very young age before the child has the sense that it is forever changing their future. Once the child realizes that they were pressured into an unalterable sex change, they will clearly be angry at the school system, their community, and their parents for failing them. A girl who has her breasts removed will never be able to nurse her children, and also worse may never be able to have children after the surgery. The fact that parents would not be involved in something so significant is criminal. This of course needs to change because parents to have rights despite what the school boards are pushing.
+        </br>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128957">
+      128957
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128958">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:01 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Ruth - Alexandria City Parent
+     <br/>
+     <br/>
+     <strong>
+      Worst policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Let kids be kids and let them be called by whatever names they want. We all changed names at least once when we were their age. Are we damaged? No.
+       </p>
+       <p>
+        Bathrooms are a non-issue as well. Kids don't even get bathroom breaks these days anyway because schools are too concerned about vaping and fights.
+       </p>
+       <p>
+        Stop this nonsense and tell parents if they want to be more involved in their kid's lives, they need to BE A PARENT and not demand that the schools do everything for them. They also need to spend time with their kids instead of yelling at school board meetings or complaining that teachers never tell them anything even though their kid has dozens of crumpled up notes from their teacher buried in their backpack.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128958">
+      128958
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128959">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:01 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Adrienne
+     <br/>
+     <br/>
+     <strong>
+      Kids know who they are
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Kids might not know what they want to be when they grow up (I’m 50-something, and I’m still not too sure) but they do know who they are inside better than anyone else. It hurts no one to call a child by their chosen name. As an early childhood educator, I learned whole school fulls of children's names, and some
+        <em>
+         gasp
+        </em>
+        were nicknames or even middle names.
+       </p>
+       <p>
+        It’s no longer acceptable to cram people into the box some small mind thinks they fit into, regardless of who they actually are, until they succumb to depression or anxiety or descend to the point of suicide. Every kid deserves a chance to reach their full potential, and for that to happen, they all need to feel equally safe in school.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128959">
+      128959
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128960">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:07 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Erin
+     <br/>
+     <br/>
+     <strong>
+      ?? yes
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Schools need to get out of the way and stick to the basics of education. Their ONLY focus should be teaching children how to read, Write etc. keep this nonsense out of our schools. The forceful gender ideology is criminal and doesn’t belong in lesson plans, advisory Etc. Get back to education not what is equitable
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128960">
+      128960
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128961">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:10 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Mark C Riley
+     <br/>
+     <br/>
+     <strong>
+      Another effort to bring back The Donna Reed Show
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        This proposal is another Republican led effort to harken back to the imaginary days of the Donna Reed Show, Leave It To Beaver and Father Knows Best when all of a family's challenges could be solved in a half hour, parents were perfect and children had no serious issues.  Like the proposal, the shows did little to protect the most vulnerable and if enacted, will put children at risk.
+       </p>
+       <p>
+        The proposal may make for good politics, but at a terrible and needless costs.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128961">
+      128961
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128962">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:11 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Jen Milburn
+     <br/>
+     <br/>
+     <strong>
+      Strongly support the new policy.
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Parents should be involved in all things related to their children until they are adults.  Schools should stick to teaching and stop trying to push the globalist agenda.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128962">
+      128962
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128963">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:12 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Meg D
+     <br/>
+     <br/>
+     <strong>
+      Protect kids
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        This is a shortsighted policy that will lead to more kids committing suicide. People need to be supported for who they are, and the people who put information on a piece of paper when they were born and too young to have agency do not know that person as well as the person themself.
+       </p>
+       <p>
+        Even if the argument of compassion doesn’t sway you, think of the argument of sense. This policy forbids nicknames. I don’t think I’ve ever heard any government overreach more petty and draconian that this.
+       </p>
+       <p>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128963">
+      128963
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128964">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:15 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Kristin Jackson
+     <br/>
+     <br/>
+     <strong>
+      CRT, Trans Policies for FCPS  Parents Rights
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Parents have rights and FCPS has no right to keep things from parents. CRT has to stop as well. I fully support Youngkin's policy is Schools against trans policy. Our kids don't belong to the state. CRT doesn't belomg in the classrooms either.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128964">
+      128964
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128965">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:18 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Cheryl Prince Teagle
+     <br/>
+     <br/>
+     <strong>
+      Parental rights concerning transgender students
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I fully support Gov Youngkin’s policy to require parents to agree to the pronoun students are called. I fully believe the education system, as well as most public policies, protect the rights of the very small minority and trounce on the rights of the majority of students and the teachers alike. They should not be held responsible for remembering what someone chooses to be called. Parents need to be more active in these important decisions as that is their responsibility as a parent! Letting children choose encourages more ridiculousness like identifying as a cat or dog and this IS happening also. Where do we draw the line. When they leave the education system they can be whatever they choose but as long as they are under 18 parents are the deciding factor and let’s hope they have the good sense to be a sensible guidance to their child.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128965">
+      128965
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128966">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:19 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Kristin Jackson Mother of 4 in Fairfax County
+     <br/>
+     <br/>
+     <strong>
+      CRT, Trans Policies for FCPS  Parents Rights Against
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Parents have rights and FCPS has no right to keep things from parents. CRT has to stop as well. I fully support Youngkin's policy is Schools against trans policy. Our kids don't belong to the state. CRT doesn't belomg in the classrooms either. Pronouns shouldn't be used. Kids know what gender they are and I believe some teachers, especially the school board are causing the students confusion at such young age. Allowing students to change their names behind there parents backs is dangerous.
+       </p>
+       <p>
+       </p>
+       <p>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128966">
+      128966
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128967">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:19 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Strongly
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I strongly oppose this proposed policy.  This proposal would create a hostile and potentially dangerous school environment for our VA transgender and nonbinary youth, requiring teachers and staff to forcibly “out” students, prohibit staff from supporting trans and nonbinary students such as using a students affirming name and pronouns, and prohibit access or participation in activities consistent with their gender identity.  All our students deserve a supportive and affirming school environment, especially our vulnerable and marginalized populations like our transgender and nonbinary youth.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128967">
+      128967
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128968">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:20 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Kaitlyn Weston
+     <br/>
+     <br/>
+     <strong>
+      Strongly oppose this policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        As a parent and educator, I strongly oppose this proposed policy.  This proposal would create a hostile and potentially dangerous school environment for our VA transgender and nonbinary youth, requiring teachers and staff to forcibly “out” students, prohibit staff from supporting trans and nonbinary students such as using a students affirming name and pronouns, and prohibit access or participation in activities consistent with their gender identity.  All our students deserve a supportive and affirming school environment, especially our vulnerable and marginalized populations like our transgender and nonbinary youth.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128968">
+      128968
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128969">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:25 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     JAMES WEBB
+     <br/>
+     <br/>
+     <strong>
+      Support
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I strongly support the policy as written and sort parental rights to be involved in what and how their children are being taught and exposed to.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128969">
+      128969
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128970">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:30 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anna-Marie York
+     <br/>
+     <br/>
+     <strong>
+      Oppose policies
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I oppose the model policies. They are harmful to transgender and gender-expansive teens and children. Kids know who they are and need adult support.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128970">
+      128970
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128971">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:31 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Support!
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        As a public school teacher, THANK YOU! I don't think a lot of people realize what our schools have become. I would like them to be places of learning, not social experimentation. Trans kids will have the rest of their lives to figure things out. They should do it at home, not at school.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128971">
+      128971
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128972">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:31 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     John Thomas Wilson
+     <br/>
+     <br/>
+     <strong>
+      Thank Governor Youngkin
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        <span style="font-size: 11.0pt; line-height: 107%; font-family: Calibri, sans-serif;">
+         Hello,
+         <br>
+          <br>
+           I am writing to say that I fully support the Governors proposed changes to the model policies, for three simple reasons:
+           <br>
+            <br>
+             1) These policies are leading children into doing irrevocable harm to themselves.
+             <br>
+              2) These policies are a clear violation of the freedom of conscience, and the first amendment, as it requires students, teachers, and faculty to engage in speech they know to be false.
+              <br>
+               3) Our teachers are being forced to "right the cosmic injustices" of the world in their classrooms. It seems all attention is being paid to leftist political theories, rather than academic rigor, and the failing performance of our schools, is evidence to this fact. Schools are not a place for radical social engineering.
+               <br>
+                <br>
+                 Thank you for have the courage of your convictions to keep the promise you made to the parents of Virginia.
+                 <br>
+                  <br>
+                   Sincerely,
+                   <br>
+                    <br>
+                     John T. Wilson
+                    </br>
+                   </br>
+                  </br>
+                 </br>
+                </br>
+               </br>
+              </br>
+             </br>
+            </br>
+           </br>
+          </br>
+         </br>
+        </span>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128972">
+      128972
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128973">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:32 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Lee Ann Bonnell
+     <br/>
+     <br/>
+     <strong>
+      I strongly support this policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I strongly support this policy.  It is imperative for parents to protect children and be 100% involved in their children's education.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128973">
+      128973
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128974">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:37 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Chelsie Gibrall Habib
+     <br/>
+     <br/>
+     <strong>
+      Parental Rights in School
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I support His policy to require parents to sign off on children changing pronouns in school. I feel like this policy should be extended to other students as well. I don’t believe it is necessary for others to be forced to use “made up” pronouns.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128974">
+      128974
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128975">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:38 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anna Dunning
+     <br/>
+     <br/>
+     <strong>
+      Strongly support this policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        As a mother of two girls and a teacher, I strongly support this policy.   The transgender craze is harmful, and will destroy many young lives.   As parents we have to stand up for our rights to protect our children from this insanity!
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128975">
+      128975
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128976">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:38 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Strongly support all people being who they are
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Everyone is different. Everyone deserves to be proud of who they are and want to be. Let them be called by the names and pronouns they feel comfortable with. Let them use the bathrooms they feel comfortable with. This goes for all adults and kids. These kids are some of the most vulnerable. Protect them in all ways. They may come from abusive homes. There is a duty to protect them from their parents in that case. Do not force legal documents for use of comfortable names, pronouns, or bathrooms. Give them a safe space.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128976">
+      128976
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128977">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:41 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Thank You Youngkin
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        This policy is a breath of fresh air.  Encouraging parents to be a part of their children’s lives is (or should be) a no brainer.  Strengthening the family unit is one of many American values that has been thrown to the side in the name of moving the country as far left as possible.  Not to mention the common sense here - you’re either a male or a female.  There is no in between.  Parents - it’s time to start being that.  A PARENT!
+        <br>
+         <br>
+          Well done Governor Youngkin for using common sense and standing by his principles.  Keep up the good work.
+         </br>
+        </br>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128977">
+      128977
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128978">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:42 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     DEBORAH PRINCE GIBRALL
+     <br/>
+     <br/>
+     <strong>
+      STUDENT PRONOUN
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I FULLY SUPPORT GOVERNOR YOUNKINS POLICY ON STUDENT PRONOUNS.   PARENTS NEE TO AGREE TO A CHILD CHANGING THEIR PRONOUN AT SCHOOL.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128978">
+      128978
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128979">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:43 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Very Bad
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        This Is very bad and will hurt trans youth across the state.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128979">
+      128979
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128980">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:43 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     JOHNNY GIBRALL
+     <br/>
+     <br/>
+     <strong>
+      PRONOUN
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I HAPPILY AGREE WITH GOVERNOR YOUNKIN ON PARENTS HAVING TO AGREE TO A CHILD CHANGING THEIR PRONOUN AT SCHOOL.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128980">
+      128980
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128981">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:47 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Pronouns are Pretend Social Engineering
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Science: Only two chromosomes XX and XY and cannot be altered by Social Engineering
+       </p>
+       <p>
+        HER or Him
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128981">
+      128981
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128982">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:47 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Genders
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        GOD Created man and woman
+       </p>
+       <p>
+        There is no other gender
+       </p>
+       <p>
+        Parents you all should be ashamed of yourselves
+       </p>
+       <p>
+       </p>
+       <p>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128982">
+      128982
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128983">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:53 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Robert W
+     <br/>
+     <br/>
+     <strong>
+      2022 Model School Policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I am in strong support of the new policy.  The state, via school board policy, has no right or legitimate claim to students over their parents.  Parents are the primary’s educators of their children and must have the ultimate say in their children’s education.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128983">
+      128983
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128984">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  7:54 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      This is about saving student lives - oppose the changes
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I strongly oppose these changes. Having worked with our youth for the past 20 years, I've worked with many transgender students. Stripping them of the rights we've provided risks their lives. I have had many students who knew they couldn't be honest with their parents at risk for their own safety physically and emotionally. Mental health issues are at an all time high, why would we intentionally impose legislation that we know increases mental health issues in children that could lead to more self-harm, anxiety, trauma, and suicide? This is about safety and this change would put children at risk.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128984">
+      128984
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128985">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:01 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Ronnie Teagle
+     <br/>
+     <br/>
+     <strong>
+      Pronoun use in school
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I fully support Gov Youngkin and applaud his initiative. Children are being encouraged To question their gender and schools need to do what they were intended to do….educate!!! You have kids graduating that can barely read because the focus is now on transgenders, giving sexual information and ways to prevent pregnancy! Teach reading, writing and common sense math and  leave the life decisions to parents and their kids.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128985">
+      128985
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128986">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:02 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     L Sambuco
+     <br/>
+     <br/>
+     <strong>
+      Safety for ALL Children
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Completely supportive of the new policies. All children should feel safe, not just a small percentage. We have already seen numerous assaults with the old policies that pandered to mentally ill children at the expense of others. We voted for Governor Youngkin because we wanted to be the ones making choices for our children. Children safety is our priority. I also would like to see serious penalties for teachers and administrators who try to ignore or bypass these guidelines. We have a huge issue with this.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128986">
+      128986
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128987">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:03 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Suzanne Hally
+     <br/>
+     <br/>
+     <strong>
+      Respect for parents’ rights and our constitutional rights
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Gender and gender ideology is a fiction, and a religious belief system at that. As such, it’s wholly inappropriate for schools to coerce community members to adhere to its tenets (including “required” use of language).
+        <br>
+         I look forward to the day when the biggest medical scandal perpetrated against children is behind us, but until then, this policy offers decent reprieve.
+         <br>
+          Thank you, Governor Youngkin.
+         </br>
+        </br>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128987">
+      128987
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128988">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:08 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Gay Rights Activist and Parent
+     <br/>
+     <br/>
+     <strong>
+      U.S. History and the Virginia Code and Rule of Law Affirms Parental Rights
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I have been an active supporter of gay rights for over a decade and sat on a national board that helped to over turn "Don't Ask, Don't Tell" established by U.S. President Bill Clinton.  I also worked tirelessly to support civil marriage for all consenting adults. These were monumental changes in our society that made us a better nation.  That said, the current movement by educators and some politicians who are not board certified in mental health, gender dysphoria, and pediatric medicine is profoundly disturbing, unethical, and akin to medical malpractice.  There is a bright line between adult decisions and parental rights and the law in Virginia is quite clear and is based on thousands of years of culture and human history writ large:
+        <a rel="nofollow" x="https://law.lis.virginia.gov/vacode/title1/chapter2.1/section1-240.1/">
+         § 1-240.1. Rights of parents. A parent has a fundamental right to make decisions concerning the upbringing, education, and care of the parent's child.
+        </a>
+        The attempt by some to separate parents from their minor children is chilling and dangerous.  It is what Stalin attempted to do in the Soviet Union, Pol Pot did in Cambodia, and what the Chinese Communist Party is current doing to the
+        <a rel="nofollow" x="https://www.npr.org/2022/02/03/1073793823/china-uyghur-children-xinjiang-boarding-school">
+         Uyghur children.
+        </a>
+        Educators and politicians who want to separate minor children claim parents will abuse or harm children who may have gender dysphoria. Every educator and person who works with minor children is legally responsible to be a
+        <a rel="nofollow" x="https://law.lis.virginia.gov/vacode/title63.2/chapter15/section63.2-1509/">
+         mandatory reporter
+        </a>
+        so that all children are safe. Mandatory reporters are not to keep secrets with minor children from their parents.  If they suspect abuse they must immediately report that claim to law enforcement. There are laws on the books and training for all mandatory reporters to go to law enforcement so this argument is moot.  Think about this for a moment - how would you feel if a teacher gave razor blades to a minor child who is cutting themselves to "affirm" their affliction?  Or if a teacher helped an anorexic girl get fat removed from her body to "affirm" her affliction?  Affirming any mental health crisis without being board certified and without parental permission is caustic and destructive behavior.  It is insanity.  A child in Virginia schools cannot take an Tylenol without parental consent and yet some elected officials want to put the burden on educators to be a board certified medical professional. That is not only unethical it is illegal. To that end, this policy makes sense.  Removing parents from their legal responsibility to make decisions for their minor child by the school system is illegal and morally reprehensible.  This policy is on solid legal and moral footing and reaffirms parental rights in Virginia while supporting all children and ensuring educators are reminded they are educators and not medical professionals.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128988">
+      128988
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128989">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:10 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Beth
+     <br/>
+     <br/>
+     <strong>
+      Thank You Youngkin
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I support parental rights and the new trans student guidance.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128989">
+      128989
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128990">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:11 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Mom
+     <br/>
+     <br/>
+     <strong>
+      Support
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I strongly support the new guidance. I think it is reasonable.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128990">
+      128990
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128991">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:11 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Bridget Weston
+     <br/>
+     <br/>
+     <strong>
+      FULLY REJECT THESE HORRIFIC CHANGES
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I strongly oppose this proposed policy and request the Superintendent reject these changes before irreversible damage is done to our children.  This proposal would create a hostile and potentially dangerous school environment for our VA transgender and nonbinary youth, requiring teachers and staff to forcibly “out” students, prohibit staff from supporting trans and nonbinary students such as using a students affirming name and pronouns, and prohibit access or participation in activities consistent with their gender identity.  All our students deserve a supportive and affirming school environment, especially our vulnerable and marginalized populations like our transgender and nonbinary youth.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128991">
+      128991
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128992">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:12 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Strongly Oppose The Changes
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Correct pronoun and name use is incredibly critical to the mental and physical health of transgender students. The proposed changes to this law threaten that health and safety, by only allowing students who feel comfortable sharing their gender identity with their parents the right of being treated with the respect of their correct name and pronouns. There are hundreds of reasons a child might not feel comfortable sharing this with their parents - religion, politics, or even just not being ready to share with their family yet. The argument that parents have the right to raise their children themselves is nonsensical, as it implied that teachers are somehow forcing a gender identity onto trans kids by respecting their pronouns. Moreover, children request to be called different names than their legal name all the time. Will we need parental consent to call William Will, or to call someone who prefers their middle name by it? This proposed change unfairly targets transgender children, and will have dire consequences for their health and wellbeing in schools if enacted.
+       </p>
+       <p>
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128992">
+      128992
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128994">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:13 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Anonymous
+     <br/>
+     <br/>
+     <strong>
+      Opposition to new transgender policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        I strongly oppose the new transgender policy. The policy purports to be aimed at supporting parental rights. However, it actually makes it harder and more burdensome for parents to support their children who already are dealing with tough issues by unrealistically and unnecessarily requiring them to provide legal documents to support use of different pronouns for their child. Further the policy requiring students to use the bathrooms that correspond to their gender assigned at birth is harmful mentally and physically to students. The department’s policies should be about its STUDENTS and their well-being. Instead the new policy is about a politician scoring points with a constituency. This is cruel and will have detrimental consequences for children—all we should care about.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128994">
+      128994
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128993">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:13 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Tracey Marek
+     <br/>
+     <br/>
+     <strong>
+      strongly oppose this policy
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        Having worked with students in both middle and high schools in Virginia for 26 years this policy will only cause damage. Transgender youth are already in danger of suicide, self harm, being kicked out of their homes, abusive situations at home, as well as targets of bullying and harassment to name a few. The previous policies PROTECTED all students, this new policy targets transgender youth in a very negative way. We already have a mental health crisis in youth and now you want us to obtain written statements from parents telling us what name to use for their children? Do you not understand that most of these children are NOT out to their parents yet for fear of abuse, disownment, harassment etc.? This is not a whim or choice, only about 2% of transgender students ever change back to cisgender. THEY NEED OUR SUPPORT!  Our job at school is to protect and provide a safe, welcoming environment for ALL students. This policy does not support that right and I strongly oppose it.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128993">
+      128993
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128995">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:15 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Matt Edgar
+     <br/>
+     <br/>
+     <strong>
+      Finally Some Common Sense Leadership
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        There are only 2 genders.  Everything else is a mental health issue that is being ignored by parents and the schools. I am glad to see that such behavior is being questioned and dealt with appropriately.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128995">
+      128995
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128996">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:17 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     Gladys Prince
+     <br/>
+     <br/>
+     <strong>
+      Use of pronouns in school
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        The responsibility of remembering what someone should be called should not be put on teachers and this nonsense has to stop. Kudos to Gov Youngkin for putting some common sense back into the education system. It’s time for schools to teach snd parents to parent.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128996">
+      128996
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <div class="Cbox" id="cbox128997">
+    <div style="float: right; text-align: right;">
+     <div style="background-color: white; border: 1px solid #cccccc; padding: 4px">
+      9/26/22  8:17 am
+     </div>
+    </div>
+    <div>
+     <strong>
+      Commenter:
+     </strong>
+     J. Anderson
+     <br/>
+     <br/>
+     <strong>
+      Approve
+     </strong>
+    </div>
+    <div style="clear: right">
+    </div>
+    <div class="divComment">
+     <!DOCTYPE html>
+     <html>
+      <head>
+      </head>
+      <body>
+       <p>
+        This guidance document ensures that parents are informed.  I recommend that this document be approved by the board of education.
+       </p>
+      </body>
+     </html>
+    </div>
+    <div style="float: left; font-size: 90%; color: #777777">
+     CommentID:
+     <a class="linklight" href="ViewComments.cfm?commentid=128997">
+      128997
+     </a>
+    </div>
+    <div style="clear: both; font-size: 0pt;">
+    </div>
+   </div>
+   <br/>
+   <br/>
+   <br/>
+   <br/>
+   <div>
+   </div>
+   <br/>
+  </div>
+ </body>
+</html>
