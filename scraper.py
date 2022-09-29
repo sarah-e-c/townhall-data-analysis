@@ -85,7 +85,7 @@ if __name__ == '__main__':
     with open(CSV_FILE_NAME, 'a') as file:
         csvwriter = csv.writer(file)
 
-        for i in range(num_pages_scraped, max_number_of_pages):
+        for i in range(num_pages_scraped + 1, max_number_of_pages):
 
             # checking time
             current_time = time.time()
@@ -135,17 +135,14 @@ if __name__ == '__main__':
 
                 csvwriter.writerow([name, title, content, comment_id, datetime, link])
 
+            # tracking progress
+            num_pages_scraped += 1
 
-
-
-            num_pages_scraped += 1 # tracking progress
+            # being nice -- it does take some time to process so it can be 0
             time.sleep(REQUEST_BUFFER_TIME)
-    
-
-
 
     logger.info('done scraping')
-    
+
     # saving progress
     parser.set('progress', 'pages_scraped', str(num_pages_scraped))
     with open(SCRAPER_CONFIG_FILE_NAME, 'w') as f:
