@@ -92,8 +92,6 @@ if __name__ == '__main__':
             if current_time - start_time > seconds_to_scrape:
                 logger.info('time ran out.')
                 # saving progress
-                with open(SCRAPER_CONFIG_FILE_NAME, 'w') as f:
-                    parser.write(f)
 
                 break # exiting
 
@@ -140,14 +138,16 @@ if __name__ == '__main__':
 
 
 
-        num_pages_scraped += 1 # tracking progress
-        time.sleep(REQUEST_BUFFER_TIME)
+            num_pages_scraped += 1 # tracking progress
+            time.sleep(REQUEST_BUFFER_TIME)
     
 
-    
-    parser.set('progress', 'num_pages_scraped', str(num_pages_scraped))
+
+
     logger.info('done scraping')
+    
     # saving progress
+    parser.set('progress', 'pages_scraped', str(num_pages_scraped))
     with open(SCRAPER_CONFIG_FILE_NAME, 'w') as f:
         parser.write(f)
         logger.info('config written')
