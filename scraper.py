@@ -5,7 +5,9 @@ from configparser import ConfigParser
 from bs4 import BeautifulSoup
 
 # requests
-import requests
+import requests 
+
+# os to check if file exists
 import os
 
 # time
@@ -13,6 +15,7 @@ import time
 
 # csv control
 import csv
+
 # logging
 import logging
 
